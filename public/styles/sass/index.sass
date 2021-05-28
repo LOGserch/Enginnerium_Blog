@@ -1,0 +1,466 @@
+body
+    margin: 0px auto
+    background: url("../../../src/img/pattern.png")
+    #principal
+        max-height: 2000px
+        height: auto
+        display: flex
+        flex-direction: column
+    
+        header           
+            display: flex
+            flex-direction: column
+            height: 10%
+            
+            .navegacion-principal
+                display: flex
+                width: 100% auto
+                height: 100%  
+                justify-content: center
+
+
+                #titulo
+                    font-family: $orbiton
+                    margin-right: 20px
+
+                    a
+                        text-decoration: none
+                        color: $color-negro
+                   
+
+                #menu-principal   
+                    padding: 10px
+                
+                #titulo,
+                #menu-principal
+                    align-self: center
+                
+                    ul
+                        list-style: none
+                        display: flex
+                        margin: 0px
+                        height: 50px
+
+                        li
+                            
+                            margin: 0px 30px
+                            display: block
+                            position: relative
+                            width: 150px
+                            text-align: center
+            
+                            a
+                                color: $color-negro
+                                text-decoration: none
+                                font-family: $code-pro
+                                display: block
+                                line-height: 50px
+                           
+                            a:hover
+                                color: $color-gris-difuminado
+                            ul
+                                display: none
+                                margin-top: 0px
+                                background: $color-blanco
+                                flex-direction: column
+                                position: absolute
+                                z-index: 31
+                                padding: 0px
+                                text-align: center
+                                height: auto
+                                li
+                                    padding: 5px
+                                    width: max-content
+
+                                    a
+                                        font-size: 12px
+                        li:hover ul
+                            display: block
+                .search
+                    width: 5rem
+                    text-align: -moz-right
+                    .fa-search
+                            color: $color-negro
+                            margin-top: 2.3rem
+                            cursor: pointer
+
+        .global-content
+            //height: 100% auto
+            display: flex
+            flex-direction: column
+            align-self: center
+            align-items: center
+            width: auto
+            margin-top: 20px
+            margin-bottom: 30px
+            .principal-title
+                    width: 50rem
+                    display: flex
+                    flex-direction: row
+                    justify-content: space-between
+                    align-self: center
+                    margin-bottom: 30px
+                    h2
+                        font-family: $code-pro
+                    .search
+                        label
+                            line-height: 71px
+                            font-family: $orbiton
+
+            .reader-section
+                width: 90%
+                display: flex  
+                flex-flow: row wrap
+                
+
+                .section-new
+                    display: flex
+                    flex-direction: row
+                    flex-basis: 100%
+                    width: 55rem
+                    height: 30rem
+                    margin-top: 30px
+                    margin-bottom: 10rem 
+                    justify-content: center
+                    .article-1
+                        background: url("../../../src/img/noticia1.jpg")
+                        width: 35rem
+                        height: 30rem
+                        .cortina
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            text-align: center
+                            background: rgba(0,0 ,0 ,0.5 )
+                            background-size: cover
+                            background-blend-mode: darken
+                            width: 100%
+                            height: 100%
+                            p
+                                margin: 0px
+                                a
+                                    color: $color-blanco
+                                    text-decoration: none
+                                    font-size: 30px
+                                    font-family: $montserrat-alternates
+                    .article-more
+                        display: flex
+                        flex-direction: column
+                        .article-next
+                            background: url("../../../src/img/noticia1.jpg")
+                            width: 15rem
+                            height: 10rem
+                            .cortina
+                                text-align: center
+                                background: rgba(0,0 ,0 ,0.5 )
+                                background-size: cover
+                                background-blend-mode: darken
+                                width: 100%
+                                height: 100%
+                                display: flex
+                                align-items: center
+                                justify-content: center
+                                p
+                                    margin: 0px
+                                    a
+                                        color: $color-blanco
+                                        text-decoration: none
+                                        font-size: 20px
+                                        font-family: $montserrat-alternates
+                h2
+                    border-bottom: 1px solid $color-negro
+                    flex-basis: 100%
+                    font-family: $code-pro
+                    text-align: center
+                    margin-bottom: 3rem
+
+                .box-article
+                    display: inline-flex
+                    flex-basis: 10%
+                    background-color: $color-blanco
+                    z-index: 30
+                    opacity: 1
+                    margin-bottom: 20px
+                    width: min-content
+                    align-self: center
+                    margin: 10px
+
+                    .article-box
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                        img
+                            overflow: hidden
+                            display: flex
+                            height: 150px 
+                            width: 230px auto
+                           
+                        
+                        .information
+                            margin-bottom: 10px 
+
+                            .fecha
+                               p
+                                   margin: 0px
+                            .fecha
+                                p,
+                                .section
+                                    a
+                                        text-decoration: none
+                                        color: $color-negro
+                                        font-family: $code-pro
+                                .section
+                                   
+                                    margin: 0px
+                                    align-self: self-end
+                                    a
+                                        
+                                        color: $naranja-crema
+                            p
+                                text-align: center
+                                a
+                                    font-family: $code-pro-normal
+                                    color: $color-negro
+                                    text-decoration: none  
+                                    font-size: 12px              
+                                
+                                
+                                .v-more
+                                    background-color: $color-blanco
+                                    border-radius:5px
+                                    border:2px  solid $verde-brilloso
+                                    padding: 5px
+                                    cursor: pointer
+                                    
+                                p
+                                    margin: 0px
+                                    margin-right: 5px 
+                                    margin-left: 5px
+                                    a
+                                        text-decoration: none
+                                        color: $color-gris-medio
+                                        font-size: 15px
+            .next-section
+                text-align: center
+                .next-list
+                    list-style: none
+                    display: inline-flex
+                    li
+                        margin: 2px
+                        padding: 5px
+                        background: $color-gris-difuminado
+                        a
+                            text-decoration: none
+                            color: $color-negro
+                            font-family: $montserrat
+                                
+            .following-section
+                width: 20%
+                margin-right: 20px
+                z-index: 20
+               
+                #lateral
+                    z-index: 30
+                            
+                    #seccion-tb
+                        display: flex
+                        flex-direction: column
+                        padding: 30px
+                        align-items: center
+                    #section-follow
+                        height: 10rem
+                        #follow
+                            background: $color-gris-medio
+                            width: -moz-available
+                            
+                            h2
+                                text-align: center
+                                margin: 10px
+                                font-family: $montserrat
+                                font-size: 20px
+                                color: $color-blanco
+                        .social-media
+                            text-align: center
+                            padding: 10px
+                            a
+                               text-decoration: none 
+
+                               .fa-facebook
+                                    color: $color-gris-claro
+                                    font-size: 30px
+                                    margin: 10px
+                               .fa-reddit
+                                    color: $color-gris-claro
+                                    font-size: 30px
+                                    margin: 10px
+                               .fa-github
+                                    color: $color-gris-claro
+                                    font-size: 30px
+                                    margin: 10px
+                    #section-subscribe
+                        .subscribe
+                            display: flex
+                            flex-direction: column
+                            #correo
+                                text-align: center
+                                margin: 5px
+                                font-family: $montserrat
+                            .button
+                                align-self: center
+                                margin: 5px  
+                    #information-section
+                        display: flex
+                        justify-content: center
+                        .popular-section
+                            .title-information
+                                background-color: $azul
+                                color: $color-blanco
+                                border-radius: 5px
+                                text-align: center
+                                font-family: $montserrat
+                                font-size: 12px
+                            .information,
+                            .etiquetas
+                                p
+                                    a
+                                        color: $color-gris-fuerte
+                            .etiquetas
+                                p
+                                    display: flex
+                                    background-color: $color-gris-fuerte
+                                    width: max-content
+                                    padding: 8px
+                                    a
+                                        color: $color-blanco
+                                        font-family: $orbiton
+                                        text-decoration: none
+                    .card-body
+                        form
+                            .btn
+                                margin: 10px 121px
+        #more-section
+            display: flex
+            flex-direction: column
+            
+            .more-view
+                display: flex
+                flex-direction: column
+                padding: 20px
+                background-color: $color-gris-fuerte
+                h2
+                    color: $color-blanco
+                    text-align: center
+                    font-family: $montserrat-alternates
+                .box
+                    display: flex
+                    flex-direction: row
+                    align-self: center
+                    .article-box
+                        background: url("../../../src/img/noticia1.jpg")
+                        width: 20rem
+                        height: 10rem
+                        margin: 10px
+                        .cortina
+                            display: flex
+                            flex-direction: column
+                            align-items: center
+                            justify-content: center
+                            text-align: center
+                            background: rgba(0,0 ,0 ,0.5 )
+                            background-size: cover
+                            background-blend-mode: darken
+                            width: 100%
+                            height: 100%
+                            h4
+                                font-family: $montserrat-alternates
+                                color: $color-blanco
+                                margin: 5px
+                            p
+                                margin: 0px
+                                a
+                                    text-decoration: none
+                                    color: $color-blanco
+                                    font-family: $montserrat-alternates
+            .article-cronicle
+                h2
+                    text-align: center
+                    font-family: $montserrat-alternates
+                .cronicle-section
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    .cronicle-box
+                        margin: 30px
+                        background-color: $color-gris-medio
+                        width: max-content
+                        h3
+                            text-align: center
+                            color: $color-blanco
+                            font-family: $montserrat-alternates
+                        .cronicle
+                            display: flex
+                            flex-direction: row
+                            justify-content: center
+                            margin: 30px
+                            .articles
+                                p
+                                    margin: 0px
+                                    a
+                                        text-decoration: none
+                                        color: $color-blanco
+            .article-review
+                display: flex
+                justify-content: center
+                .review-content
+                    background-color: $color-gris-medio
+                    width: max-content
+                    align-self: center
+                    padding: 20px
+                    h2
+                        text-align: center
+                        color: $color-blanco
+                        font-family: $montserrat-alternates
+        
+                    .libros,
+                    .peliculas
+                        h3
+                            text-align: center
+                            font-family: $montserrat-alternates
+                        .box-book
+                            display: flex
+                            flex-direction: row
+                            .book
+                                margin: 10px
+                                display: flex
+                                flex-direction: column
+                                justify-content: center
+                                p
+                                    margin: 0px
+                                    text-align: center
+                                    a
+                                        text-decoration: none
+                                        color: $color-blanco
+                                        font-family: $montserrat
+                                .titulo
+                                    color: $verde-crema
+                                    font-family: $orbiton
+        #footer-1
+            height: 100% auto
+            margin-top: 20px
+            background: $color-gris-fuerte
+            text-align: center
+
+            .contact
+                padding: 40px
+                border-top: 6px solid $verde-crema
+                p
+                    color: $color-blanco
+                    font-family: $open-sans
+
+
+                                   
+                        
+
+                    
+                                
+                

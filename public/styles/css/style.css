@@ -1,0 +1,804 @@
+body {
+  margin: 0px auto;
+  background: url("../../../src/img/pattern.png");
+}
+body #principal {
+  max-height: 2000px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+body #principal header {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+}
+body #principal header .navegacion-principal {
+  display: flex;
+  width: 100% auto;
+  height: 100%;
+  justify-content: center;
+}
+body #principal header .navegacion-principal #titulo {
+  font-family: "Orbiton", sans-serif;
+  margin-right: 20px;
+}
+body #principal header .navegacion-principal #titulo a {
+  text-decoration: none;
+  color: #000000;
+}
+body #principal header .navegacion-principal #menu-principal {
+  padding: 10px;
+}
+body #principal header .navegacion-principal #titulo,
+body #principal header .navegacion-principal #menu-principal {
+  align-self: center;
+}
+body #principal header .navegacion-principal #titulo ul,
+body #principal header .navegacion-principal #menu-principal ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  height: 50px;
+}
+body #principal header .navegacion-principal #titulo ul li,
+body #principal header .navegacion-principal #menu-principal ul li {
+  margin: 0px 30px;
+  display: block;
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+body #principal header .navegacion-principal #titulo ul li a,
+body #principal header .navegacion-principal #menu-principal ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Source Code Pro Extra-light 200 italic", monospace;
+  display: block;
+  line-height: 50px;
+}
+body #principal header .navegacion-principal #titulo ul li a:hover,
+body #principal header .navegacion-principal #menu-principal ul li a:hover {
+  color: #dedede;
+}
+body #principal header .navegacion-principal #titulo ul li ul,
+body #principal header .navegacion-principal #menu-principal ul li ul {
+  display: none;
+  margin-top: 0px;
+  background: #ffffff;
+  flex-direction: column;
+  position: absolute;
+  z-index: 31;
+  padding: 0px;
+  text-align: center;
+  height: auto;
+}
+body #principal header .navegacion-principal #titulo ul li ul li,
+body #principal header .navegacion-principal #menu-principal ul li ul li {
+  padding: 5px;
+  width: max-content;
+}
+body #principal header .navegacion-principal #titulo ul li ul li a,
+body #principal header .navegacion-principal #menu-principal ul li ul li a {
+  font-size: 12px;
+}
+body #principal header .navegacion-principal #titulo ul li:hover ul,
+body #principal header .navegacion-principal #menu-principal ul li:hover ul {
+  display: block;
+}
+body #principal header .navegacion-principal .search {
+  width: 5rem;
+  text-align: -moz-right;
+}
+body #principal header .navegacion-principal .search .fa-search {
+  color: #000000;
+  margin-top: 2.3rem;
+  cursor: pointer;
+}
+body #principal .global-content {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+body #principal .global-content .principal-title {
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  margin-bottom: 30px;
+}
+body #principal .global-content .principal-title h2 {
+  font-family: "Source Code Pro Extra-light 200 italic", monospace;
+}
+body #principal .global-content .principal-title .search label {
+  line-height: 71px;
+  font-family: "Orbiton", sans-serif;
+}
+body #principal .global-content .reader-section {
+  width: 90%;
+  display: flex;
+  flex-flow: row wrap;
+}
+body #principal .global-content .reader-section .section-new {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  width: 55rem;
+  height: 30rem;
+  margin-top: 30px;
+  margin-bottom: 10rem;
+  justify-content: center;
+}
+body #principal .global-content .reader-section .section-new .article-1 {
+  background: url("../../../src/img/noticia1.jpg");
+  width: 35rem;
+  height: 30rem;
+}
+body #principal .global-content .reader-section .section-new .article-1 .cortina {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100%;
+}
+body #principal .global-content .reader-section .section-new .article-1 .cortina p {
+  margin: 0px;
+}
+body #principal .global-content .reader-section .section-new .article-1 .cortina p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal .global-content .reader-section .section-new .article-more {
+  display: flex;
+  flex-direction: column;
+}
+body #principal .global-content .reader-section .section-new .article-more .article-next {
+  background: url("../../../src/img/noticia1.jpg");
+  width: 15rem;
+  height: 10rem;
+}
+body #principal .global-content .reader-section .section-new .article-more .article-next .cortina {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body #principal .global-content .reader-section .section-new .article-more .article-next .cortina p {
+  margin: 0px;
+}
+body #principal .global-content .reader-section .section-new .article-more .article-next .cortina p a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal .global-content .reader-section h2 {
+  border-bottom: 1px solid #000000;
+  flex-basis: 100%;
+  font-family: "Source Code Pro Extra-light 200 italic", monospace;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+body #principal .global-content .reader-section .box-article {
+  display: inline-flex;
+  flex-basis: 10%;
+  background-color: #ffffff;
+  z-index: 30;
+  opacity: 1;
+  margin-bottom: 20px;
+  width: min-content;
+  align-self: center;
+  margin: 10px;
+}
+body #principal .global-content .reader-section .box-article .article-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body #principal .global-content .reader-section .box-article .article-box img {
+  overflow: hidden;
+  display: flex;
+  height: 150px;
+  width: 230px auto;
+}
+body #principal .global-content .reader-section .box-article .article-box .information {
+  margin-bottom: 10px;
+}
+body #principal .global-content .reader-section .box-article .article-box .information .fecha p {
+  margin: 0px;
+}
+body #principal .global-content .reader-section .box-article .article-box .information .fecha p a,
+body #principal .global-content .reader-section .box-article .article-box .information .fecha .section a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Source Code Pro Extra-light 200 italic", monospace;
+}
+body #principal .global-content .reader-section .box-article .article-box .information .fecha .section {
+  margin: 0px;
+  align-self: self-end;
+}
+body #principal .global-content .reader-section .box-article .article-box .information .fecha .section a {
+  color: #EE6D3E;
+}
+body #principal .global-content .reader-section .box-article .article-box .information p {
+  text-align: center;
+}
+body #principal .global-content .reader-section .box-article .article-box .information p a {
+  font-family: "Source Code Pro", monospace;
+  color: #000000;
+  text-decoration: none;
+  font-size: 12px;
+}
+body #principal .global-content .reader-section .box-article .article-box .information p .v-more {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 2px solid #4caf50;
+  padding: 5px;
+  cursor: pointer;
+}
+body #principal .global-content .reader-section .box-article .article-box .information p p {
+  margin: 0px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+body #principal .global-content .reader-section .box-article .article-box .information p p a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-size: 15px;
+}
+body #principal .global-content .next-section {
+  text-align: center;
+}
+body #principal .global-content .next-section .next-list {
+  list-style: none;
+  display: inline-flex;
+}
+body #principal .global-content .next-section .next-list li {
+  margin: 2px;
+  padding: 5px;
+  background: #dedede;
+}
+body #principal .global-content .next-section .next-list li a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+body #principal .global-content .following-section {
+  width: 20%;
+  margin-right: 20px;
+  z-index: 20;
+}
+body #principal .global-content .following-section #lateral {
+  z-index: 30;
+}
+body #principal .global-content .following-section #lateral #seccion-tb {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  align-items: center;
+}
+body #principal .global-content .following-section #lateral #section-follow {
+  height: 10rem;
+}
+body #principal .global-content .following-section #lateral #section-follow #follow {
+  background: #4e4e4e;
+  width: -moz-available;
+}
+body #principal .global-content .following-section #lateral #section-follow #follow h2 {
+  text-align: center;
+  margin: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+body #principal .global-content .following-section #lateral #section-follow .social-media {
+  text-align: center;
+  padding: 10px;
+}
+body #principal .global-content .following-section #lateral #section-follow .social-media a {
+  text-decoration: none;
+}
+body #principal .global-content .following-section #lateral #section-follow .social-media a .fa-facebook {
+  color: #777777;
+  font-size: 30px;
+  margin: 10px;
+}
+body #principal .global-content .following-section #lateral #section-follow .social-media a .fa-reddit {
+  color: #777777;
+  font-size: 30px;
+  margin: 10px;
+}
+body #principal .global-content .following-section #lateral #section-follow .social-media a .fa-github {
+  color: #777777;
+  font-size: 30px;
+  margin: 10px;
+}
+body #principal .global-content .following-section #lateral #section-subscribe .subscribe {
+  display: flex;
+  flex-direction: column;
+}
+body #principal .global-content .following-section #lateral #section-subscribe .subscribe #correo {
+  text-align: center;
+  margin: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+body #principal .global-content .following-section #lateral #section-subscribe .subscribe .button {
+  align-self: center;
+  margin: 5px;
+}
+body #principal .global-content .following-section #lateral #information-section {
+  display: flex;
+  justify-content: center;
+}
+body #principal .global-content .following-section #lateral #information-section .popular-section .title-information {
+  background-color: #4867aa;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+}
+body #principal .global-content .following-section #lateral #information-section .popular-section .information p a,
+body #principal .global-content .following-section #lateral #information-section .popular-section .etiquetas p a {
+  color: #242424;
+}
+body #principal .global-content .following-section #lateral #information-section .popular-section .etiquetas p {
+  display: flex;
+  background-color: #242424;
+  width: max-content;
+  padding: 8px;
+}
+body #principal .global-content .following-section #lateral #information-section .popular-section .etiquetas p a {
+  color: #ffffff;
+  font-family: "Orbiton", sans-serif;
+  text-decoration: none;
+}
+body #principal .global-content .following-section #lateral .card-body form .btn {
+  margin: 10px 121px;
+}
+body #principal #more-section {
+  display: flex;
+  flex-direction: column;
+}
+body #principal #more-section .more-view {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #242424;
+}
+body #principal #more-section .more-view h2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal #more-section .more-view .box {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+body #principal #more-section .more-view .box .article-box {
+  background: url("../../../src/img/noticia1.jpg");
+  width: 20rem;
+  height: 10rem;
+  margin: 10px;
+}
+body #principal #more-section .more-view .box .article-box .cortina {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100%;
+}
+body #principal #more-section .more-view .box .article-box .cortina h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #ffffff;
+  margin: 5px;
+}
+body #principal #more-section .more-view .box .article-box .cortina p {
+  margin: 0px;
+}
+body #principal #more-section .more-view .box .article-box .cortina p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal #more-section .article-cronicle h2 {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal #more-section .article-cronicle .cronicle-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body #principal #more-section .article-cronicle .cronicle-section .cronicle-box {
+  margin: 30px;
+  background-color: #4e4e4e;
+  width: max-content;
+}
+body #principal #more-section .article-cronicle .cronicle-section .cronicle-box h3 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 30px;
+}
+body #principal #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle .articles p {
+  margin: 0px;
+}
+body #principal #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle .articles p a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body #principal #more-section .article-review {
+  display: flex;
+  justify-content: center;
+}
+body #principal #more-section .article-review .review-content {
+  background-color: #4e4e4e;
+  width: max-content;
+  align-self: center;
+  padding: 20px;
+}
+body #principal #more-section .article-review .review-content h2 {
+  text-align: center;
+  color: #ffffff;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal #more-section .article-review .review-content .libros h3,
+body #principal #more-section .article-review .review-content .peliculas h3 {
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+body #principal #more-section .article-review .review-content .libros .box-book,
+body #principal #more-section .article-review .review-content .peliculas .box-book {
+  display: flex;
+  flex-direction: row;
+}
+body #principal #more-section .article-review .review-content .libros .box-book .book,
+body #principal #more-section .article-review .review-content .peliculas .box-book .book {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body #principal #more-section .article-review .review-content .libros .box-book .book p,
+body #principal #more-section .article-review .review-content .peliculas .box-book .book p {
+  margin: 0px;
+  text-align: center;
+}
+body #principal #more-section .article-review .review-content .libros .box-book .book p a,
+body #principal #more-section .article-review .review-content .peliculas .box-book .book p a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+body #principal #more-section .article-review .review-content .libros .box-book .book .titulo,
+body #principal #more-section .article-review .review-content .peliculas .box-book .book .titulo {
+  color: #36F3D7;
+  font-family: "Orbiton", sans-serif;
+}
+body #principal #footer-1 {
+  height: 100% auto;
+  margin-top: 20px;
+  background: #242424;
+  text-align: center;
+}
+body #principal #footer-1 .contact {
+  padding: 40px;
+  border-top: 6px solid #36F3D7;
+}
+body #principal #footer-1 .contact p {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0px auto;
+  background: url("../../../src/img/pattern.png");
+}
+body #article {
+  max-height: 2000px;
+  height: 100% auto;
+}
+body #article header {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+}
+body #article header .navegacion-articulo {
+  display: flex;
+  width: 100% auto;
+  height: 100%;
+  justify-content: center;
+}
+body #article header .navegacion-articulo #titulo {
+  font-family: "Orbiton", sans-serif;
+  margin-right: 20px;
+}
+body #article header .navegacion-articulo #titulo a {
+  text-decoration: none;
+  color: #000000;
+}
+body #article header .navegacion-articulo #menu-principal {
+  padding: 10px;
+}
+body #article header .navegacion-articulo #titulo,
+body #article header .navegacion-articulo #menu-principal {
+  align-self: center;
+}
+body #article header .navegacion-articulo #titulo ul,
+body #article header .navegacion-articulo #menu-principal ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  height: 50px;
+}
+body #article header .navegacion-articulo #titulo ul li,
+body #article header .navegacion-articulo #menu-principal ul li {
+  margin: 0px 30px;
+  display: block;
+  position: relative;
+  width: 150px;
+  text-align: center;
+}
+body #article header .navegacion-articulo #titulo ul li a,
+body #article header .navegacion-articulo #menu-principal ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Source Code Pro Extra-light 200 italic", monospace;
+  display: block;
+  line-height: 50px;
+}
+body #article header .navegacion-articulo #titulo ul li a:hover,
+body #article header .navegacion-articulo #menu-principal ul li a:hover {
+  color: #dedede;
+}
+body #article header .navegacion-articulo #titulo ul li ul,
+body #article header .navegacion-articulo #menu-principal ul li ul {
+  display: none;
+  margin-top: 0px;
+  background: #ffffff;
+  flex-direction: column;
+  position: absolute;
+  z-index: 31;
+  padding: 0px;
+  text-align: center;
+  height: auto;
+}
+body #article header .navegacion-articulo #titulo ul li ul li,
+body #article header .navegacion-articulo #menu-principal ul li ul li {
+  padding: 5px;
+  width: max-content;
+}
+body #article header .navegacion-articulo #titulo ul li ul li a,
+body #article header .navegacion-articulo #menu-principal ul li ul li a {
+  font-size: 12px;
+}
+body #article header .navegacion-articulo #titulo ul li:hover ul,
+body #article header .navegacion-articulo #menu-principal ul li:hover ul {
+  display: block;
+}
+body #article header .navegacion-articulo .search {
+  width: 5rem;
+  text-align: -moz-right;
+}
+body #article header .navegacion-articulo .search .fa-search {
+  color: #000000;
+  margin-top: 2.3rem;
+  cursor: pointer;
+}
+body #article .global-content {
+  height: 100% auto;
+  margin-top: 20px;
+  display: flex;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+body #article .global-content .reader-section {
+  width: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #article .global-content .reader-section h2,
+body #article .global-content .reader-section .fecha {
+  width: 50%;
+  text-align: center;
+}
+body #article .global-content .reader-section h2 {
+  border-bottom: 2px solid #000000;
+}
+body #article .global-content .reader-section h2 a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Open Sans", sans-serif;
+}
+body #article .global-content .reader-section .information {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: center;
+  width: 50%;
+}
+body #article .global-content .reader-section .information .fecha {
+  display: flex;
+  flex-direction: row;
+}
+body #article .global-content .reader-section .information .fecha p {
+  margin: 0px;
+}
+body #article .global-content .reader-section .information .fecha p a {
+  text-decoration: none;
+  color: #4e4e4e;
+  font-family: "Montserrat", sans-serif;
+}
+body #article .global-content .reader-section .information .compartir .fa-github {
+  color: #000000;
+}
+body #article .global-content .reader-section .information .compartir .fa-reddit {
+  color: #ff4500;
+}
+body #article .global-content .reader-section .information .compartir .fa-facebook {
+  color: #4867aa;
+}
+body #article .global-content .reader-section .text-information {
+  width: 75%;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+}
+body #article .global-content .reader-section .text-information p {
+  font-family: "Orbiton", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+}
+body #article .global-content .reader-section .text-information p img {
+  width: 320px;
+  height: 300px;
+  align-self: center;
+}
+body #article .global-content .reader-section .text-information img {
+  width: 320px;
+  height: 300px;
+  align-self: center;
+}
+body #article .global-content .title-next {
+  border-bottom: 3px solid #4867aa;
+}
+body #article .global-content .title-next h3 {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+body #article .global-content .article-next {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+body #article .global-content .article-next .article-box {
+  background: url("../../../src/img/noticia1.jpg");
+  width: 20rem;
+  height: 10rem;
+  margin: 10px;
+}
+body #article .global-content .article-next .article-box .title-description {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  height: 10rem;
+  background-size: cover;
+  background-blend-mode: darken;
+}
+body #article .global-content .article-next .article-box .title-description h4 {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  opacity: 1;
+  line-height: 5rem;
+  margin: 0px;
+}
+body #article .global-content .article-next .article-box .title-description p {
+  margin: 0px;
+}
+body #article .global-content .article-next .article-box .title-description p a {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  opacity: 1;
+  text-decoration: none;
+}
+body #article .global-content .comentarios {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+body #article .global-content .comentarios h2 {
+  text-align: center;
+  margin: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+body #article .global-content .comentarios .comentarios-publicados {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #656565;
+}
+body #article .global-content .comentarios .comentarios-publicados .box-comentario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 50px 0px 50px 0px;
+}
+body #article .global-content .comentarios .comentarios-publicados .box-comentario .box-user {
+  margin: 10px;
+}
+body #article .global-content .comentarios .comentarios-publicados .box-comentario .box-user .fa-user-circle {
+  font-size: 50px;
+  color: #656565;
+}
+body #article .global-content .comentarios .comentarios-publicados .box-comentario .box-information p > * {
+  font-family: "Open Sans", sans-serif;
+  color: #4caf50;
+}
+body #article .global-content .comentarios form .add-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #article .global-content .comentarios form .add-c #comentario,
+body #article .global-content .comentarios form .add-c #nombre,
+body #article .global-content .comentarios form .add-c #correo {
+  width: 30rem;
+  margin: 10px;
+}
+body #article .global-content .comentarios form .add-c #boton-enviar {
+  width: max-content;
+  margin: 10px;
+}
+body #article .global-content .comentarios form .add-c label {
+  width: max-content;
+}
+body #article #footer-2 {
+  height: 100% auto;
+  margin-top: 20px;
+  background: #242424;
+  text-align: center;
+}
+body #article #footer-2 .contact {
+  padding: 40px;
+}
+body #article #footer-2 .contact p {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

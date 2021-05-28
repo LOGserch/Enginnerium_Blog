@@ -1,0 +1,28 @@
+{
+  "name": "enginner.ium",
+  "version": "1.0.0",
+  "description": "Blog about technology,computer science,enginner and more",
+  "scripts": {
+    "start": "node ./bin/www.js",
+    "dev": "nodemon ./bin/www.js"
+  },
+  "author": "sergiovg",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.3.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "fs": "0.0.1-security",
+    "handlebars": "^4.7.7",
+    "hbs": "^4.1.2",
+    "http-errors": "^1.8.0",
+    "jquery": "^3.6.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
