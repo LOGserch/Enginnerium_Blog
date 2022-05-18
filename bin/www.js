@@ -1,5 +1,6 @@
 var app = require('../app');
 var http = require('http');
+require('../public/js/database');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);

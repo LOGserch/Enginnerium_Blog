@@ -1,10 +1,29 @@
 'use strict'
 window.addEventListener('load',() =>{
+    
+    setTimeout(function(){
+        const download = document.getElementById("onload");
+        var body = document.body;
+        body.classList.add("hidden");
+
+        setTimeout(function(){
+        
+            download.style.display="none";
+            body.classList.remove("hidden");
+        },550);
+    
+    },'load');
+    
+    
+
+    
+    
+ 
 
     const date = new Date();
     const formatoFecha = DateFormat(date, 'dd/mm/yy');
     const fecha = `
-        <a>publicado en ${formatoFecha}</a>
+        <a><strong> ${formatoFecha}</strong></a>
     `;
 
 

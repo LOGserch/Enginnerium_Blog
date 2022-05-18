@@ -1,11 +1,13 @@
-body
-    margin: 0px auto
-    background: url("../../../src/img/pattern.png")
-    #principal
-        max-height: 2000px
-        height: auto
-        display: flex
-        flex-direction: column
+
+    body
+        margin: 0px auto
+        background: url("../../../src/img/pattern.png")
+        
+        #principal
+            max-height: 2000px
+            height: auto
+            display: flex
+            flex-direction: column
     
         header           
             display: flex
@@ -13,20 +15,8 @@ body
             height: 10%
             
             .navegacion-principal
-                display: flex
-                width: 100% auto
-                height: 100%  
                 justify-content: center
-
-
-                #titulo
-                    font-family: $orbiton
-                    margin-right: 20px
-
-                    a
-                        text-decoration: none
-                        color: $color-negro
-                   
+                
 
                 #menu-principal   
                     padding: 10px
@@ -76,6 +66,19 @@ body
                                         font-size: 12px
                         li:hover ul
                             display: block
+                .pos-f-t
+                    .navbar
+                        h1                           
+                            margin: 0px 50px
+                            text-decoration: none
+                            color: $color-blanco
+                            font-size: 15px
+                        .navbar-toggler
+                            margin-right: 20px
+                        .navbar-collapse
+                            margin: 0px 50px
+
+                          
                 .search
                     width: 5rem
                     text-align: -moz-right
@@ -168,7 +171,7 @@ body
                                         font-size: 20px
                                         font-family: $montserrat-alternates
                 h2
-                    border-bottom: 1px solid $color-negro
+                    
                     flex-basis: 100%
                     font-family: $code-pro
                     text-align: center
@@ -240,6 +243,13 @@ body
                                         text-decoration: none
                                         color: $color-gris-medio
                                         font-size: 15px
+                    .card
+                        .card-body
+                            align-self: center
+                            .btn
+                                color: $color-gris-medio
+                                background-color: $color-blanco
+                                border-color: $verde-brilloso
             .next-section
                 text-align: center
                 .next-list
@@ -456,6 +466,79 @@ body
                 p
                     color: $color-blanco
                     font-family: $open-sans
+.hidden
+    overflow: hidden
+    .download
+        height: 100vh
+        background-color: $color-negro
+        display: flex
+        justify-content: center
+        align-items: center
+        .lds-grid 
+            display: inline-block
+            position: relative
+            width: 80px
+            height: 80px
+                                
+            div 
+                position: absolute
+                width: 16px
+                height: 16px
+                border-radius: 50%
+                background: $color-blanco
+                animation: lds-grid 1.2s linear infinite
+                                
+            div:nth-child(1) 
+                top: 8px
+                left: 8px
+                animation-delay: 0s
+                                
+            div:nth-child(2) 
+                top: 8px
+                left: 32px
+                animation-delay: -0.4s
+                                
+            div:nth-child(3) 
+                top: 8px
+                left: 56px
+                animation-delay: -0.8s
+                                
+            div:nth-child(4) 
+                top: 32px
+                left: 8px
+                animation-delay: -0.4s
+                                
+            div:nth-child(5) 
+                top: 32px
+                left: 32px
+                animation-delay: -0.8s
+                                
+            div:nth-child(6) 
+                top: 32px
+                left: 56px
+                animation-delay: -1.2s
+                                
+            div:nth-child(7) 
+                top: 56px
+                left: 8px
+                animation-delay: -0.8s
+                                
+            div:nth-child(8) 
+                top: 56px
+                left: 32px
+                animation-delay: -1.2s
+                                
+            div:nth-child(9) 
+                top: 56px
+                left: 56px
+                animation-delay: -1.6s
+                                
+            @keyframes lds-grid 
+                0%,
+                100% 
+                    opacity: 1                       
+                50% 
+                    opacity: 0.5
 
 
                                    

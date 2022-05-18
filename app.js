@@ -6,6 +6,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var indexRouter = require('./routes/index');
 
+require('dotenv').config();
+
 
 var app = express();//clase express, este es el servidor
 

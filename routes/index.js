@@ -21,6 +21,12 @@ router.get('/section', function(req, res, next) {
   //res.sendFile(path.join(__dirname, '../views/section.html'));
   res.render(path.join('section'));
 });
+router.get('/about', function(req, res) {
+  //res.sendFile(path.join(__dirname, '../public/views/article_demo.html'));
+  res.render(path.join('about'));
+  
+  //res.sendFile(path.join(__dirname,'../public/js/index.js'));
+});
 
 
 router.post('/send-comment', async(req, res) =>{

@@ -8,61 +8,50 @@ body #principal {
   display: flex;
   flex-direction: column;
 }
-body #principal header {
+body header {
   display: flex;
   flex-direction: column;
   height: 10%;
 }
-body #principal header .navegacion-principal {
-  display: flex;
-  width: 100% auto;
-  height: 100%;
+body header .navegacion-principal {
   justify-content: center;
 }
-body #principal header .navegacion-principal #titulo {
-  font-family: "Orbiton", sans-serif;
-  margin-right: 20px;
-}
-body #principal header .navegacion-principal #titulo a {
-  text-decoration: none;
-  color: #000000;
-}
-body #principal header .navegacion-principal #menu-principal {
+body header .navegacion-principal #menu-principal {
   padding: 10px;
 }
-body #principal header .navegacion-principal #titulo,
-body #principal header .navegacion-principal #menu-principal {
+body header .navegacion-principal #titulo,
+body header .navegacion-principal #menu-principal {
   align-self: center;
 }
-body #principal header .navegacion-principal #titulo ul,
-body #principal header .navegacion-principal #menu-principal ul {
+body header .navegacion-principal #titulo ul,
+body header .navegacion-principal #menu-principal ul {
   list-style: none;
   display: flex;
   margin: 0px;
   height: 50px;
 }
-body #principal header .navegacion-principal #titulo ul li,
-body #principal header .navegacion-principal #menu-principal ul li {
+body header .navegacion-principal #titulo ul li,
+body header .navegacion-principal #menu-principal ul li {
   margin: 0px 30px;
   display: block;
   position: relative;
   width: 150px;
   text-align: center;
 }
-body #principal header .navegacion-principal #titulo ul li a,
-body #principal header .navegacion-principal #menu-principal ul li a {
+body header .navegacion-principal #titulo ul li a,
+body header .navegacion-principal #menu-principal ul li a {
   color: #000000;
   text-decoration: none;
   font-family: "Source Code Pro Extra-light 200 italic", monospace;
   display: block;
   line-height: 50px;
 }
-body #principal header .navegacion-principal #titulo ul li a:hover,
-body #principal header .navegacion-principal #menu-principal ul li a:hover {
+body header .navegacion-principal #titulo ul li a:hover,
+body header .navegacion-principal #menu-principal ul li a:hover {
   color: #dedede;
 }
-body #principal header .navegacion-principal #titulo ul li ul,
-body #principal header .navegacion-principal #menu-principal ul li ul {
+body header .navegacion-principal #titulo ul li ul,
+body header .navegacion-principal #menu-principal ul li ul {
   display: none;
   margin-top: 0px;
   background: #ffffff;
@@ -73,29 +62,41 @@ body #principal header .navegacion-principal #menu-principal ul li ul {
   text-align: center;
   height: auto;
 }
-body #principal header .navegacion-principal #titulo ul li ul li,
-body #principal header .navegacion-principal #menu-principal ul li ul li {
+body header .navegacion-principal #titulo ul li ul li,
+body header .navegacion-principal #menu-principal ul li ul li {
   padding: 5px;
   width: max-content;
 }
-body #principal header .navegacion-principal #titulo ul li ul li a,
-body #principal header .navegacion-principal #menu-principal ul li ul li a {
+body header .navegacion-principal #titulo ul li ul li a,
+body header .navegacion-principal #menu-principal ul li ul li a {
   font-size: 12px;
 }
-body #principal header .navegacion-principal #titulo ul li:hover ul,
-body #principal header .navegacion-principal #menu-principal ul li:hover ul {
+body header .navegacion-principal #titulo ul li:hover ul,
+body header .navegacion-principal #menu-principal ul li:hover ul {
   display: block;
 }
-body #principal header .navegacion-principal .search {
+body header .navegacion-principal .pos-f-t .navbar h1 {
+  margin: 0px 50px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+body header .navegacion-principal .pos-f-t .navbar .navbar-toggler {
+  margin-right: 20px;
+}
+body header .navegacion-principal .pos-f-t .navbar .navbar-collapse {
+  margin: 0px 50px;
+}
+body header .navegacion-principal .search {
   width: 5rem;
   text-align: -moz-right;
 }
-body #principal header .navegacion-principal .search .fa-search {
+body header .navegacion-principal .search .fa-search {
   color: #000000;
   margin-top: 2.3rem;
   cursor: pointer;
 }
-body #principal .global-content {
+body .global-content {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -104,7 +105,7 @@ body #principal .global-content {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-body #principal .global-content .principal-title {
+body .global-content .principal-title {
   width: 50rem;
   display: flex;
   flex-direction: row;
@@ -112,19 +113,19 @@ body #principal .global-content .principal-title {
   align-self: center;
   margin-bottom: 30px;
 }
-body #principal .global-content .principal-title h2 {
+body .global-content .principal-title h2 {
   font-family: "Source Code Pro Extra-light 200 italic", monospace;
 }
-body #principal .global-content .principal-title .search label {
+body .global-content .principal-title .search label {
   line-height: 71px;
   font-family: "Orbiton", sans-serif;
 }
-body #principal .global-content .reader-section {
+body .global-content .reader-section {
   width: 90%;
   display: flex;
   flex-flow: row wrap;
 }
-body #principal .global-content .reader-section .section-new {
+body .global-content .reader-section .section-new {
   display: flex;
   flex-direction: row;
   flex-basis: 100%;
@@ -134,12 +135,12 @@ body #principal .global-content .reader-section .section-new {
   margin-bottom: 10rem;
   justify-content: center;
 }
-body #principal .global-content .reader-section .section-new .article-1 {
+body .global-content .reader-section .section-new .article-1 {
   background: url("../../../src/img/noticia1.jpg");
   width: 35rem;
   height: 30rem;
 }
-body #principal .global-content .reader-section .section-new .article-1 .cortina {
+body .global-content .reader-section .section-new .article-1 .cortina {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,25 +151,25 @@ body #principal .global-content .reader-section .section-new .article-1 .cortina
   width: 100%;
   height: 100%;
 }
-body #principal .global-content .reader-section .section-new .article-1 .cortina p {
+body .global-content .reader-section .section-new .article-1 .cortina p {
   margin: 0px;
 }
-body #principal .global-content .reader-section .section-new .article-1 .cortina p a {
+body .global-content .reader-section .section-new .article-1 .cortina p a {
   color: #ffffff;
   text-decoration: none;
   font-size: 30px;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal .global-content .reader-section .section-new .article-more {
+body .global-content .reader-section .section-new .article-more {
   display: flex;
   flex-direction: column;
 }
-body #principal .global-content .reader-section .section-new .article-more .article-next {
+body .global-content .reader-section .section-new .article-more .article-next {
   background: url("../../../src/img/noticia1.jpg");
   width: 15rem;
   height: 10rem;
 }
-body #principal .global-content .reader-section .section-new .article-more .article-next .cortina {
+body .global-content .reader-section .section-new .article-more .article-next .cortina {
   text-align: center;
   background: rgba(0, 0, 0, 0.5);
   background-size: cover;
@@ -179,23 +180,22 @@ body #principal .global-content .reader-section .section-new .article-more .arti
   align-items: center;
   justify-content: center;
 }
-body #principal .global-content .reader-section .section-new .article-more .article-next .cortina p {
+body .global-content .reader-section .section-new .article-more .article-next .cortina p {
   margin: 0px;
 }
-body #principal .global-content .reader-section .section-new .article-more .article-next .cortina p a {
+body .global-content .reader-section .section-new .article-more .article-next .cortina p a {
   color: #ffffff;
   text-decoration: none;
   font-size: 20px;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal .global-content .reader-section h2 {
-  border-bottom: 1px solid #000000;
+body .global-content .reader-section h2 {
   flex-basis: 100%;
   font-family: "Source Code Pro Extra-light 200 italic", monospace;
   text-align: center;
   margin-bottom: 3rem;
 }
-body #principal .global-content .reader-section .box-article {
+body .global-content .reader-section .box-article {
   display: inline-flex;
   flex-basis: 10%;
   background-color: #ffffff;
@@ -206,147 +206,155 @@ body #principal .global-content .reader-section .box-article {
   align-self: center;
   margin: 10px;
 }
-body #principal .global-content .reader-section .box-article .article-box {
+body .global-content .reader-section .box-article .article-box {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-body #principal .global-content .reader-section .box-article .article-box img {
+body .global-content .reader-section .box-article .article-box img {
   overflow: hidden;
   display: flex;
   height: 150px;
   width: 230px auto;
 }
-body #principal .global-content .reader-section .box-article .article-box .information {
+body .global-content .reader-section .box-article .article-box .information {
   margin-bottom: 10px;
 }
-body #principal .global-content .reader-section .box-article .article-box .information .fecha p {
+body .global-content .reader-section .box-article .article-box .information .fecha p {
   margin: 0px;
 }
-body #principal .global-content .reader-section .box-article .article-box .information .fecha p a,
-body #principal .global-content .reader-section .box-article .article-box .information .fecha .section a {
+body .global-content .reader-section .box-article .article-box .information .fecha p a,
+body .global-content .reader-section .box-article .article-box .information .fecha .section a {
   text-decoration: none;
   color: #000000;
   font-family: "Source Code Pro Extra-light 200 italic", monospace;
 }
-body #principal .global-content .reader-section .box-article .article-box .information .fecha .section {
+body .global-content .reader-section .box-article .article-box .information .fecha .section {
   margin: 0px;
   align-self: self-end;
 }
-body #principal .global-content .reader-section .box-article .article-box .information .fecha .section a {
+body .global-content .reader-section .box-article .article-box .information .fecha .section a {
   color: #EE6D3E;
 }
-body #principal .global-content .reader-section .box-article .article-box .information p {
+body .global-content .reader-section .box-article .article-box .information p {
   text-align: center;
 }
-body #principal .global-content .reader-section .box-article .article-box .information p a {
+body .global-content .reader-section .box-article .article-box .information p a {
   font-family: "Source Code Pro", monospace;
   color: #000000;
   text-decoration: none;
   font-size: 12px;
 }
-body #principal .global-content .reader-section .box-article .article-box .information p .v-more {
+body .global-content .reader-section .box-article .article-box .information p .v-more {
   background-color: #ffffff;
   border-radius: 5px;
   border: 2px solid #4caf50;
   padding: 5px;
   cursor: pointer;
 }
-body #principal .global-content .reader-section .box-article .article-box .information p p {
+body .global-content .reader-section .box-article .article-box .information p p {
   margin: 0px;
   margin-right: 5px;
   margin-left: 5px;
 }
-body #principal .global-content .reader-section .box-article .article-box .information p p a {
+body .global-content .reader-section .box-article .article-box .information p p a {
   text-decoration: none;
   color: #4e4e4e;
   font-size: 15px;
 }
-body #principal .global-content .next-section {
+body .global-content .reader-section .box-article .card .card-body {
+  align-self: center;
+}
+body .global-content .reader-section .box-article .card .card-body .btn {
+  color: #4e4e4e;
+  background-color: #ffffff;
+  border-color: #4caf50;
+}
+body .global-content .next-section {
   text-align: center;
 }
-body #principal .global-content .next-section .next-list {
+body .global-content .next-section .next-list {
   list-style: none;
   display: inline-flex;
 }
-body #principal .global-content .next-section .next-list li {
+body .global-content .next-section .next-list li {
   margin: 2px;
   padding: 5px;
   background: #dedede;
 }
-body #principal .global-content .next-section .next-list li a {
+body .global-content .next-section .next-list li a {
   text-decoration: none;
   color: #000000;
   font-family: "Montserrat", sans-serif;
 }
-body #principal .global-content .following-section {
+body .global-content .following-section {
   width: 20%;
   margin-right: 20px;
   z-index: 20;
 }
-body #principal .global-content .following-section #lateral {
+body .global-content .following-section #lateral {
   z-index: 30;
 }
-body #principal .global-content .following-section #lateral #seccion-tb {
+body .global-content .following-section #lateral #seccion-tb {
   display: flex;
   flex-direction: column;
   padding: 30px;
   align-items: center;
 }
-body #principal .global-content .following-section #lateral #section-follow {
+body .global-content .following-section #lateral #section-follow {
   height: 10rem;
 }
-body #principal .global-content .following-section #lateral #section-follow #follow {
+body .global-content .following-section #lateral #section-follow #follow {
   background: #4e4e4e;
   width: -moz-available;
 }
-body #principal .global-content .following-section #lateral #section-follow #follow h2 {
+body .global-content .following-section #lateral #section-follow #follow h2 {
   text-align: center;
   margin: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: #ffffff;
 }
-body #principal .global-content .following-section #lateral #section-follow .social-media {
+body .global-content .following-section #lateral #section-follow .social-media {
   text-align: center;
   padding: 10px;
 }
-body #principal .global-content .following-section #lateral #section-follow .social-media a {
+body .global-content .following-section #lateral #section-follow .social-media a {
   text-decoration: none;
 }
-body #principal .global-content .following-section #lateral #section-follow .social-media a .fa-facebook {
+body .global-content .following-section #lateral #section-follow .social-media a .fa-facebook {
   color: #777777;
   font-size: 30px;
   margin: 10px;
 }
-body #principal .global-content .following-section #lateral #section-follow .social-media a .fa-reddit {
+body .global-content .following-section #lateral #section-follow .social-media a .fa-reddit {
   color: #777777;
   font-size: 30px;
   margin: 10px;
 }
-body #principal .global-content .following-section #lateral #section-follow .social-media a .fa-github {
+body .global-content .following-section #lateral #section-follow .social-media a .fa-github {
   color: #777777;
   font-size: 30px;
   margin: 10px;
 }
-body #principal .global-content .following-section #lateral #section-subscribe .subscribe {
+body .global-content .following-section #lateral #section-subscribe .subscribe {
   display: flex;
   flex-direction: column;
 }
-body #principal .global-content .following-section #lateral #section-subscribe .subscribe #correo {
+body .global-content .following-section #lateral #section-subscribe .subscribe #correo {
   text-align: center;
   margin: 5px;
   font-family: "Montserrat", sans-serif;
 }
-body #principal .global-content .following-section #lateral #section-subscribe .subscribe .button {
+body .global-content .following-section #lateral #section-subscribe .subscribe .button {
   align-self: center;
   margin: 5px;
 }
-body #principal .global-content .following-section #lateral #information-section {
+body .global-content .following-section #lateral #information-section {
   display: flex;
   justify-content: center;
 }
-body #principal .global-content .following-section #lateral #information-section .popular-section .title-information {
+body .global-content .following-section #lateral #information-section .popular-section .title-information {
   background-color: #4867aa;
   color: #ffffff;
   border-radius: 5px;
@@ -354,51 +362,51 @@ body #principal .global-content .following-section #lateral #information-section
   font-family: "Montserrat", sans-serif;
   font-size: 12px;
 }
-body #principal .global-content .following-section #lateral #information-section .popular-section .information p a,
-body #principal .global-content .following-section #lateral #information-section .popular-section .etiquetas p a {
+body .global-content .following-section #lateral #information-section .popular-section .information p a,
+body .global-content .following-section #lateral #information-section .popular-section .etiquetas p a {
   color: #242424;
 }
-body #principal .global-content .following-section #lateral #information-section .popular-section .etiquetas p {
+body .global-content .following-section #lateral #information-section .popular-section .etiquetas p {
   display: flex;
   background-color: #242424;
   width: max-content;
   padding: 8px;
 }
-body #principal .global-content .following-section #lateral #information-section .popular-section .etiquetas p a {
+body .global-content .following-section #lateral #information-section .popular-section .etiquetas p a {
   color: #ffffff;
   font-family: "Orbiton", sans-serif;
   text-decoration: none;
 }
-body #principal .global-content .following-section #lateral .card-body form .btn {
+body .global-content .following-section #lateral .card-body form .btn {
   margin: 10px 121px;
 }
-body #principal #more-section {
+body #more-section {
   display: flex;
   flex-direction: column;
 }
-body #principal #more-section .more-view {
+body #more-section .more-view {
   display: flex;
   flex-direction: column;
   padding: 20px;
   background-color: #242424;
 }
-body #principal #more-section .more-view h2 {
+body #more-section .more-view h2 {
   color: #ffffff;
   text-align: center;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal #more-section .more-view .box {
+body #more-section .more-view .box {
   display: flex;
   flex-direction: row;
   align-self: center;
 }
-body #principal #more-section .more-view .box .article-box {
+body #more-section .more-view .box .article-box {
   background: url("../../../src/img/noticia1.jpg");
   width: 20rem;
   height: 10rem;
   margin: 10px;
 }
-body #principal #more-section .more-view .box .article-box .cortina {
+body #more-section .more-view .box .article-box .cortina {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -410,112 +418,190 @@ body #principal #more-section .more-view .box .article-box .cortina {
   width: 100%;
   height: 100%;
 }
-body #principal #more-section .more-view .box .article-box .cortina h4 {
+body #more-section .more-view .box .article-box .cortina h4 {
   font-family: "Montserrat Alternates", sans-serif;
   color: #ffffff;
   margin: 5px;
 }
-body #principal #more-section .more-view .box .article-box .cortina p {
+body #more-section .more-view .box .article-box .cortina p {
   margin: 0px;
 }
-body #principal #more-section .more-view .box .article-box .cortina p a {
+body #more-section .more-view .box .article-box .cortina p a {
   text-decoration: none;
   color: #ffffff;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal #more-section .article-cronicle h2 {
+body #more-section .article-cronicle h2 {
   text-align: center;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal #more-section .article-cronicle .cronicle-section {
+body #more-section .article-cronicle .cronicle-section {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-body #principal #more-section .article-cronicle .cronicle-section .cronicle-box {
+body #more-section .article-cronicle .cronicle-section .cronicle-box {
   margin: 30px;
   background-color: #4e4e4e;
   width: max-content;
 }
-body #principal #more-section .article-cronicle .cronicle-section .cronicle-box h3 {
+body #more-section .article-cronicle .cronicle-section .cronicle-box h3 {
   text-align: center;
   color: #ffffff;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle {
+body #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 30px;
 }
-body #principal #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle .articles p {
+body #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle .articles p {
   margin: 0px;
 }
-body #principal #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle .articles p a {
+body #more-section .article-cronicle .cronicle-section .cronicle-box .cronicle .articles p a {
   text-decoration: none;
   color: #ffffff;
 }
-body #principal #more-section .article-review {
+body #more-section .article-review {
   display: flex;
   justify-content: center;
 }
-body #principal #more-section .article-review .review-content {
+body #more-section .article-review .review-content {
   background-color: #4e4e4e;
   width: max-content;
   align-self: center;
   padding: 20px;
 }
-body #principal #more-section .article-review .review-content h2 {
+body #more-section .article-review .review-content h2 {
   text-align: center;
   color: #ffffff;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal #more-section .article-review .review-content .libros h3,
-body #principal #more-section .article-review .review-content .peliculas h3 {
+body #more-section .article-review .review-content .libros h3,
+body #more-section .article-review .review-content .peliculas h3 {
   text-align: center;
   font-family: "Montserrat Alternates", sans-serif;
 }
-body #principal #more-section .article-review .review-content .libros .box-book,
-body #principal #more-section .article-review .review-content .peliculas .box-book {
+body #more-section .article-review .review-content .libros .box-book,
+body #more-section .article-review .review-content .peliculas .box-book {
   display: flex;
   flex-direction: row;
 }
-body #principal #more-section .article-review .review-content .libros .box-book .book,
-body #principal #more-section .article-review .review-content .peliculas .box-book .book {
+body #more-section .article-review .review-content .libros .box-book .book,
+body #more-section .article-review .review-content .peliculas .box-book .book {
   margin: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-body #principal #more-section .article-review .review-content .libros .box-book .book p,
-body #principal #more-section .article-review .review-content .peliculas .box-book .book p {
+body #more-section .article-review .review-content .libros .box-book .book p,
+body #more-section .article-review .review-content .peliculas .box-book .book p {
   margin: 0px;
   text-align: center;
 }
-body #principal #more-section .article-review .review-content .libros .box-book .book p a,
-body #principal #more-section .article-review .review-content .peliculas .box-book .book p a {
+body #more-section .article-review .review-content .libros .box-book .book p a,
+body #more-section .article-review .review-content .peliculas .box-book .book p a {
   text-decoration: none;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
 }
-body #principal #more-section .article-review .review-content .libros .box-book .book .titulo,
-body #principal #more-section .article-review .review-content .peliculas .box-book .book .titulo {
+body #more-section .article-review .review-content .libros .box-book .book .titulo,
+body #more-section .article-review .review-content .peliculas .box-book .book .titulo {
   color: #36F3D7;
   font-family: "Orbiton", sans-serif;
 }
-body #principal #footer-1 {
+body #footer-1 {
   height: 100% auto;
   margin-top: 20px;
   background: #242424;
   text-align: center;
 }
-body #principal #footer-1 .contact {
+body #footer-1 .contact {
   padding: 40px;
   border-top: 6px solid #36F3D7;
 }
-body #principal #footer-1 .contact p {
+body #footer-1 .contact p {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+  overflow: hidden;
+}
+.hidden .download {
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden .download .lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.hidden .download .lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.hidden .download .lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.hidden .download .lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.hidden .download .lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.hidden .download .lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.hidden .download .lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.hidden .download .lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.hidden .download .lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.hidden .download .lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.hidden .download .lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 body {
@@ -532,21 +618,26 @@ body #article header {
   height: 10%;
 }
 body #article header .navegacion-articulo {
-  display: flex;
-  width: 100% auto;
-  height: 100%;
+  height: 90%;
   justify-content: center;
-}
-body #article header .navegacion-articulo #titulo {
-  font-family: "Orbiton", sans-serif;
-  margin-right: 20px;
-}
-body #article header .navegacion-articulo #titulo a {
-  text-decoration: none;
-  color: #000000;
 }
 body #article header .navegacion-articulo #menu-principal {
   padding: 10px;
+}
+body #article header .navegacion-articulo .pos-f-t {
+  overflow: hidden;
+}
+body #article header .navegacion-articulo .pos-f-t .navbar h1 {
+  margin: 0px 50px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+body #article header .navegacion-articulo .pos-f-t .navbar .navbar-toggler {
+  margin-right: 20px;
+}
+body #article header .navegacion-articulo .pos-f-t .navbar .navbar-collapse {
+  margin: 0px 50px;
 }
 body #article header .navegacion-articulo #titulo,
 body #article header .navegacion-articulo #menu-principal {
@@ -614,18 +705,14 @@ body #article header .navegacion-articulo .search .fa-search {
   cursor: pointer;
 }
 body #article .global-content {
-  height: 100% auto;
   margin-top: 20px;
-  display: flex;
   z-index: 10;
   display: flex;
   flex-direction: column;
+  width: auto;
 }
 body #article .global-content .reader-section {
-  width: 100%;
-  margin-right: 20px;
-  margin-left: 20px;
-  z-index: 20;
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -637,6 +724,7 @@ body #article .global-content .reader-section .fecha {
 }
 body #article .global-content .reader-section h2 {
   border-bottom: 2px solid #000000;
+  margin-bottom: 5px;
 }
 body #article .global-content .reader-section h2 a {
   text-decoration: none;
@@ -673,13 +761,13 @@ body #article .global-content .reader-section .information .compartir .fa-facebo
 }
 body #article .global-content .reader-section .text-information {
   width: 75%;
-  margin: 100px;
+  margin: 50px;
   display: flex;
   flex-direction: column;
 }
 body #article .global-content .reader-section .text-information p {
   font-family: "Orbiton", sans-serif;
-  font-size: 20px;
+  font-size: 15px;
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -743,7 +831,7 @@ body #article .global-content .comentarios {
 }
 body #article .global-content .comentarios h2 {
   text-align: center;
-  margin: 10px;
+  margin: 5px;
   font-family: "Open Sans", sans-serif;
 }
 body #article .global-content .comentarios .comentarios-publicados {
@@ -799,6 +887,84 @@ body #article #footer-2 .contact {
 body #article #footer-2 .contact p {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
+}
+
+.hidden {
+  overflow: hidden;
+}
+.hidden .download {
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidden .download .lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.hidden .download .lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: lds-grid 1.2s linear infinite;
+}
+.hidden .download .lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.hidden .download .lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.hidden .download .lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.hidden .download .lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.hidden .download .lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.hidden .download .lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.hidden .download .lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.hidden .download .lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.hidden .download .lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
